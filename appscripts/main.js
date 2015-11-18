@@ -442,8 +442,6 @@ require(
             songplay();
         }
 
-        var mainon;
-
         function audiofade() {
             var fadeAudio = setInterval(function () {          
                 if (document.getElementById("video").currentTime >= 0) {
@@ -1665,7 +1663,7 @@ require(
                             pointerMove(next3);
                             menu.play();
                             aifade();
-                            beiplay();
+                            kitplay();
 
                             next3.node.addEventListener('click', function(ev){
                                 theresa3.hide();
@@ -1674,8 +1672,8 @@ require(
                                 next4.show();
                                 pointerMove(next4); 
                                 menu.play();
-                                beifade();
-                                kitplay();
+                                kitfade();
+                                beiplay();
 
                                 next4.node.addEventListener('click', function(ev){
                                     theresa4.hide();
@@ -1683,7 +1681,7 @@ require(
                                     scripts();
                                     next4.hide();
                                     menu.play();
-                                    kitfade();   
+                                    beifade();   
                                     }); 
                                 });   
                             });   
