@@ -30,11 +30,8 @@ require(
         console.log(pHeight);
 
 //CREATE IMAGES AND OBJECTS
-        var skip = paper7.rect(0,0,70,30);
-        console.log("skip appears");
-        skip.attr({
-            "fill": "red"
-        });
+        var skip = paper7.image("css/resources/skip.png", 0,0,100,54);
+
 
         var button1 = paper4.image("css/resources/button1.png", 0, 35, 55, 55);
         var button2 = paper4.image("css/resources/button2.png", 50, 35, 55, 55);
@@ -684,8 +681,6 @@ require(
         canvas.style.overflow = "hidden";
         canvas.style.visibility = "hidden";
         popup.style.visibility = "hidden";
-        //theresa.style.visibility = "hidden";
-        //anthony.style.visibility = "hidden";
         closesign.style.visibility = "hidden";
         ethno.style.visibility = "hidden";
         video.style.visibility = "hidden";
@@ -701,11 +696,13 @@ require(
         pointerMove(button2);
         pointerMove(button3);
         pointerMove(button4);
+        pointerMove(skip);
 
         bsound(button1);
         bsound(button2);
         bsound(button3);
         bsound(button4);
+        bsound(skip);
     
         trans(writej1);
         trans(writej2);
