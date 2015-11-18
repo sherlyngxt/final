@@ -785,7 +785,6 @@ require(
                     console.log("timer works");
                     video.addEventListener('mousemove', function(ev){
                         video.style.cursor="pointer";
-                        menu.play();
                     }) 
                     video.addEventListener('click', function(ev){
                         unfade();     
